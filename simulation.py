@@ -189,8 +189,13 @@ class Simulation(object):
         # people are selected for an interaction.  That means that only living people
         # should be passed into this method.  Assert statements are included to make sure
         # that this doesn't happen.
-        assert person1.is_alive == True
+        assert person.is_alive == True
         assert random_person.is_alive == True
+
+        if random_person.infection == None and random_person.is_vaccinated == False:
+            random_number = random.uniform(0, 1)
+            if random_number < self.basic_repro_num:
+                self.newly_infected.append(random_person._id)
 
         # The possible cases you'll need to cover are listed below:
             # random_person is vaccinated:
