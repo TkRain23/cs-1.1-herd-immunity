@@ -96,9 +96,8 @@ class Simulation(object):
                 # TODO: Create all the infected people first, and then worry about the rest.
                 # Don't forget to increment infected_count every time you create a
                 # new infected person!
-                Person(self.next_person_id, False, sim_virus)
+                population.append(Person(self.next_person_id, False, sim_virus))
                 infected_count += 1
-                self.next_person_id += 1
 
             else:
                 # Now create all the rest of the people.
@@ -106,7 +105,13 @@ class Simulation(object):
                 # 0 and 1.  If this number is smaller than vacc_percentage, this person
                 # should be created as a vaccinated person. If not, the person should be
                 # created as an unvaccinated person.
-                pass
+                random_number = random.uniform(0, 1)
+                if random_number < self.vacc_percentage:
+                    population.append(Person(self.next_person_id, True))
+                else:
+                    population.append(Person(self.next_person_id, False))
+
+            self.next_person_id += 1
             # TODO: After any Person object is created, whether sick or healthy,
             # you will need to increment self.next_person_id by 1. Each Person object's
             # ID has to be unique!
@@ -119,7 +124,26 @@ class Simulation(object):
         #     - The entire population is dead.
         #     - There are no infected people left in the population.
         # In all other instances, the simulation should continue.
-        pass
+
+        
+
+        # is_population_alive = all(person.is_alive for person in self.population)
+        #
+        # for person in self.population:
+        #     if person.infection == None:
+        #         return True
+        #     elif is_population_alive == True:
+        #         return True
+        #     else:
+        #         return False
+        #
+        #
+        # population_ all(person.infection for people in self.population)
+        #
+        # for people in self.population:
+        #     return all(person.is_alive)
+        #     return all(person.infection)
+
 
     def run(self):
         # TODO: Finish this method.  This method should run the simulation until
