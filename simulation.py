@@ -125,7 +125,10 @@ class Simulation(object):
         #     - There are no infected people left in the population.
         # In all other instances, the simulation should continue.
 
-        
+        if self.current_infected == 0 or total_dead == population_size:
+            return False  # simulation comes to an end
+        else:
+            return True  # simulation continues running
 
         # is_population_alive = all(person.is_alive for person in self.population)
         #
