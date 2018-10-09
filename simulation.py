@@ -38,6 +38,7 @@ class Simulation(object):
         -- All arguments will be passed as command-line arguments when the file is run.
         -- After setting values for attributes, calls self._create_population() in order
             to create the population array that will be used for this simulation.
+
     _create_population(self, initial_infected):
         -- Expects initial_infected as an Int.
         -- Should be called only once, at the end of the __init__ method.
@@ -45,12 +46,13 @@ class Simulation(object):
         -- Creates all infected person objects first.  Each time a new one is created,
             increments infected_count variable by 1.
         -- Once all infected person objects are created, begins creating healthy
-            person objects.  To decide if a person is vaccinated or not, generates
+            person objects. To decide if a person is vaccinated or not, generates
             a random number between 0 and 1.  If that number is smaller than
             self.vacc_percentage, new person object will be created with is_vaccinated
             set to True.  Otherwise, is_vaccinated will be set to False.
         -- Once len(population) is the same as self.population_size, returns population.
     '''
+
 
     def __init__(self, population_size, vacc_percentage, virus_name,
                  mortality_rate, basic_repro_num, initial_infected=1):
@@ -68,7 +70,7 @@ class Simulation(object):
         # TODO: Create a Logger object and bind it to self.logger.  You should use this
         # logger object to log all events of any importance during the simulation.  Don't forget
         # to call these logger methods in the corresponding parts of the simulation!
-        self.logger = None
+        self.logger = Logger(self.file_name)
 
         # This attribute will be used to keep track of all the people that catch
         # the infection during a given time step. We'll store each newly infected
@@ -78,6 +80,7 @@ class Simulation(object):
         self.newly_infected = []
         # TODO: Call self._create_population() and pass in the correct parameters.
         # Store the array that this method will return in the self.population attribute.
+        self.population = self._create_population(initial_infected)
 
     def _create_population(self, initial_infected):
         # TODO: Finish this method!  This method should be called when the simulation
@@ -87,12 +90,16 @@ class Simulation(object):
         # people vaccinated, correct number of initially infected people).
         population = []
         infected_count = 0
-        while len(population) != pop_size:
+        sim_virus = Virus(self.virus_name, self.mortality_rate, self.basic_repro_num)
+        while len(population) != self.population_size:
             if infected_count !=  initial_infected:
                 # TODO: Create all the infected people first, and then worry about the rest.
                 # Don't forget to increment infected_count every time you create a
                 # new infected person!
-                pass
+                Person(self.next_person_id, False, sim_virus)
+                infected_count += 1
+                self.next_person_id += 1
+
             else:
                 # Now create all the rest of the people.
                 # Every time a new person will be created, generate a random number between
