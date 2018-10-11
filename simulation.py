@@ -93,7 +93,7 @@ class Simulation(object):
         infected_count = 0
 
         while len(population) != self.population_size:
-            if infected_count != initial_infected:
+            if infected_count !=  initial_infected:
                 # TODO: Create all the infected people first, and then worry about the rest.
                 # Don't forget to increment infected_count every time you create a
                 # new infected person!
