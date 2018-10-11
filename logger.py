@@ -44,7 +44,7 @@ class Logger(object):
     def __init__(self, file_name):
         # TODO:  Finish this initialization method.  The file_name passed should be the
         # full file name of the file that the logs will be written to.
-        self.file_name = None
+        self.file_name = Simulation(self.file_name)
 
     def write_metadata(self, pop_size, vacc_percentage, virus_name, mortality_rate,
                        basic_repro_num):
@@ -52,13 +52,15 @@ class Logger(object):
         # immediately upon creation, to log the specific parameters of the simulation
         # as the first line of the file.  This line of metadata should be tab-delimited
         # (each item separated by a '\t' character).
+        file = open(self.simulation.logger, "w")  # I need to open the file... not sure how to call it tbh
+        file.write(self.pop_size '\t' self.vacc_percentage '\t' self.virus_name '\t'  self.mortality_rate '\t' self.basic_repro_num '\n')
+
         # NOTE: Since this is the first method called, it will create the text file
         # that we will store all logs in.  Be sure to use 'w' mode when you open the file.
         # For all other methods, we'll want to use the 'a' mode to append our new log to the end,
         # since 'w' overwrites the file.
         # NOTE: Make sure to end every line with a '/n' character to ensure that each
         # event logged ends up on a separate line!
-        pass
 
     def log_interaction(self, person1, person2, did_infect=None,
                         person2_vacc=None, person2_sick=None):
