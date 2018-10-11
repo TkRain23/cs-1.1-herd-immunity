@@ -66,6 +66,7 @@ class Simulation(object):
         self.basic_repro_num = basic_repro_num
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
             virus_name, population_size, vacc_percentage, initial_infected)
+        self.sim_virus = Virus(self.virus_name, self.mortality_rate, self.basic_repro_num)
 
         # TODO: Create a Logger object and bind it to self.logger.  You should use this
         # logger object to log all events of any importance during the simulation.  Don't forget
@@ -90,13 +91,13 @@ class Simulation(object):
         # people vaccinated, correct number of initially infected people).
         population = []
         infected_count = 0
-        sim_virus = Virus(self.virus_name, self.mortality_rate, self.basic_repro_num)
+
         while len(population) != self.population_size:
             if infected_count !=  initial_infected:
                 # TODO: Create all the infected people first, and then worry about the rest.
                 # Don't forget to increment infected_count every time you create a
                 # new infected person!
-                population.append(Person(self.next_person_id, False, sim_virus))
+                population.append(Person(self.next_person_id, False, self.sim_virus))
                 infected_count += 1
 
             else:
@@ -208,7 +209,6 @@ class Simulation(object):
             #     Simulation object's newly_infected array, so that their .infected
             #     attribute can be changed to True at the end of the time step.
         # TODO: Remember to call self.logger.log_interaction() during this method!
-        pass
 
     def _infect_newly_infected(self):
         # TODO: Finish this method! This method should be called at the end of
@@ -220,6 +220,11 @@ class Simulation(object):
         #   - Set this Person's .infected attribute to True.
         # NOTE: Once you have iterated through the entire list of self.newly_infected, remember
         # to reset self.newly_infected back to an empty list!
+        for person_id in self.newly_infected:
+            for person in self.population:
+                if person._id == person_id:
+                    person.infection = self.sim_virus
+        self.newly_infected = []
 
 if __name__ == "__main__":
     params = sys.argv[1:]
