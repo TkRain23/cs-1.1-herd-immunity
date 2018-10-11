@@ -155,7 +155,6 @@ class Simulation(object):
         # population. To simplify the logic here, we will use the helper method
         # _simulation_should_continue() to tell us whether or not we should continue
         # the simulation and run at least 1 more time_step.
-
         # This method should keep track of the number of time steps that
         # have passed using the time_step_counter variable.  Make sure you remember to
         # the logger's log_time_step() method at the end of each time step, pass in the
@@ -163,12 +162,14 @@ class Simulation(object):
         time_step_counter = 0
         # TODO: Remember to set this variable to an intial call of
         # self._simulation_should_continue()!
-        should_continue = None
+        should_continue = self._simulation_should_continue()
         while should_continue:
+            self.time_step()
+            time_step_counter += 1
+            should_continue = self._simulation_should_continue()
         # TODO: for every iteration of this loop, call self.time_step() to compute another
         # round of this simulation.  At the end of each iteration of this loop, remember
         # to rebind should_continue to another call of self._simulation_should_continue()!
-            pass
         print('The simulation has ended after {time_step_counter} turns.'.format(time_step_counter))
 
     def time_step(self):
@@ -183,7 +184,17 @@ class Simulation(object):
             #           - Else:
             #               - Call simulation.interaction(person, random_person)
             #               - Increment interaction counter by 1.
-            pass
+            for person in self.population:
+                if person.infection is not None:
+                    interaction = 0
+                    while interaction < 99:
+                        randomPerson = random.choice(person)
+                        if randomPerson.is_alive = True:
+                            simulation.interaction(person, random_person)
+                            interaction += 1
+
+
+
 
     def interaction(self, person, random_person):
         # TODO: Finish this method! This method should be called any time two living
