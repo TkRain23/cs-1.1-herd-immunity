@@ -52,7 +52,7 @@ class Logger(object):
         # immediately upon creation, to log the specific parameters of the simulation
         # as the first line of the file.  This line of metadata should be tab-delimited
         # (each item separated by a '\t' character).
-        file = open(self.simulation.logger, "w")  # I need to open the file... not sure how to call it tbh
+        file = open(self.file_name, "w")  # I need to open the file... not sure how to call it tbh
         file.write(self.pop_size '\t' self.vacc_percentage '\t' self.virus_name '\t'  self.mortality_rate '\t' self.basic_repro_num '\n')
 
         # NOTE: Since this is the first method called, it will create the text file

@@ -185,11 +185,11 @@ class Simulation(object):
             #               - Call simulation.interaction(person, random_person)
             #               - Increment interaction counter by 1.
             for person in self.population:
-                if person.infection is not None:
+                if person.infection is not None and person.is_alive:
                     interaction = 0
-                    while interaction < 99:
-                        randomPerson = random.choice(person)
-                        if randomPerson.is_alive = True:
+                    while interaction < 100:
+                        randomPerson = random.choice(self.population)
+                        if randomPerson.is_alive and randomPerson._id != person._id:
                             simulation.interaction(person, random_person)
                             interaction += 1
 
