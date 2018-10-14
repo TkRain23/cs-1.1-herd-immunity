@@ -148,7 +148,6 @@ class Simulation(object):
         #     return all(person.is_alive)
         #     return all(person.infection)
 
-
     def run(self):
         # TODO: Finish this method.  This method should run the simulation until
         # everyone in the simulation is dead, or the disease no longer exists in the
