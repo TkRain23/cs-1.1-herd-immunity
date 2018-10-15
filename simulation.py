@@ -93,9 +93,8 @@ class Simulation(object):
         # people vaccinated, correct number of initially infected people).
         population = []
         infected_count = 0
-
         while len(population) != self.population_size:
-            if infected_count !=  initial_infected:
+            if infected_count != initial_infected:
                 # TODO: Create all the infected people first, and then worry about the rest.
                 # Don't forget to increment infected_count every time you create a
                 # new infected person!
@@ -142,13 +141,7 @@ class Simulation(object):
             return False
         if self.current_infected == total_dead_counter:
             return False
-
-        print(total_dead_counter)
-        print(self.population_size)
-        print(self.current_infected)
-        print('__________')
-        return True
-
+            
         # if self.current_infected == 0 or total_dead == population_size:
         #     return False  # simulation comes to an end
         # else:
@@ -206,14 +199,30 @@ class Simulation(object):
             #           - Else:
             #               - Call simulation.interaction(person, random_person)
             #               - Increment interaction counter by 1.
+            interaction = 0
             for person in self.population:
+                print(person.infection)
+                print(person.is_alive)
                 if person.infection is not None and person.is_alive:
-                    interaction = 0
+                    print()
                     while interaction < 100:
                         randomPerson = random.choice(self.population)
                         if randomPerson.is_alive and randomPerson._id != person._id:
                             self.interaction(person, randomPerson)
                             interaction += 1
+            self._infect_newly_infected()
+
+            # interactions = 1
+            # for person in self.population:
+            #     if person.is_alive == True:
+            #         while interactions <= 100:
+            #             random_interation = random.choice(self.population)
+            #         if random_interation.is_alive is False or random_interation._id == person._id:
+            #             continue
+            #         self.interaction(person, random_interation)
+            #         interactions += 1
+            # else:
+            #     None
 
     def interaction(self, person, random_person):
         # TODO: Finish this method! This method should be called any time two living
@@ -223,11 +232,18 @@ class Simulation(object):
         assert person.is_alive == True
         assert random_person.is_alive == True
 
-        if random_person.infection == None and random_person.is_vaccinated == False:
+        if random_person.is_vaccinated:
+            self.logger.log_interaction(person, random_person, False, True, False)
+        elif random_person.infection is not None:
+            self.logger.log_interaction(person, random_person, False, False, True)
+        elif random_person.infection == None and random_person.is_vaccinated == False:
             random_number = random.uniform(0, 1)
             if random_number < self.basic_repro_num:
                 self.newly_infected.append(random_person._id)
+                logger.log_interaction(person, random_person, True, False, False)
                 self.current_infected += 1
+        else:
+            self.logger.log_interaction(person, random_person, False, False, False)
 
         # The possible cases you'll need to cover are listed below:
             # random_person is vaccinated:
@@ -255,6 +271,7 @@ class Simulation(object):
             for person in self.population:
                 if person._id == person_id:
                     person.infection = self.sim_virus
+                    self.current_infected += 1
         self.newly_infected = []
 
 if __name__ == "__main__":
