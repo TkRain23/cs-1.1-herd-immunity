@@ -12,4 +12,7 @@ def test_simulation():
     sim.run()
 
 def test_person_creation():
-    
+    person = Person(23, True)
+    assert person._id == 23
+    assert person.is_alive == True
+    assert person.infected == None
