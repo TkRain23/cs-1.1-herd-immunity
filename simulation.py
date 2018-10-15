@@ -129,7 +129,8 @@ class Simulation(object):
         # In all other instances, the simulation should continue.
         for person in self.population:
             if person.infection:
-                person.did_survive_infection()
+                if person.did_survive_infection():
+                    print('per')
 
         total_dead_counter = 0
         if self.current_infected == self.population_size:
@@ -141,7 +142,7 @@ class Simulation(object):
             return False
         if self.current_infected == total_dead_counter:
             return False
-            
+
         # if self.current_infected == 0 or total_dead == population_size:
         #     return False  # simulation comes to an end
         # else:
