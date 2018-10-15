@@ -1,4 +1,5 @@
 import random
+from virus import Virus
 # TO DO: Import the virus clase
 
 class Person(object):

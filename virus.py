@@ -8,5 +8,3 @@ class Virus(object):
         self.virus_name = virus_name
         self.mortality_rate = mortality_rate
         self.reproductive_rate = reproductive_rate
-
-        

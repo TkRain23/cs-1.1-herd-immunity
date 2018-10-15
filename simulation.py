@@ -1,4 +1,5 @@
 import random, sys
+from virus import Virus
 random.seed(42)
 from person import Person
 from logger import Logger
@@ -63,6 +64,7 @@ class Simulation(object):
         self.next_person_id = 0
         self.virus_name = virus_name
         self.mortality_rate = mortality_rate
+        self.vacc_percentage = vacc_percentage
         self.basic_repro_num = basic_repro_num
         self.file_name = "{}_simulation_pop_{}_vp_{}_infected_{}.txt".format(
             virus_name, population_size, vacc_percentage, initial_infected)
@@ -99,6 +101,7 @@ class Simulation(object):
                 # new infected person!
                 population.append(Person(self.next_person_id, False, self.sim_virus))
                 infected_count += 1
+                self.current_infected += 1
 
             else:
                 # Now create all the rest of the people.
@@ -125,11 +128,31 @@ class Simulation(object):
         #     - The entire population is dead.
         #     - There are no infected people left in the population.
         # In all other instances, the simulation should continue.
+        for person in self.population:
+            if person.infection:
+                person.did_survive_infection()
 
-        if self.current_infected == 0 or total_dead == population_size:
-            return False  # simulation comes to an end
-        else:
-            return True  # simulation continues running
+        total_dead_counter = 0
+        if self.current_infected == self.population_size:
+            return False
+        for person in self.population:
+            if person.is_alive != True:
+                total_dead_counter += 1
+        if total_dead_counter == self.population_size:
+            return False
+        if self.current_infected == total_dead_counter:
+            return False
+
+        print(total_dead_counter)
+        print(self.population_size)
+        print(self.current_infected)
+        print('__________')
+        return True
+
+        # if self.current_infected == 0 or total_dead == population_size:
+        #     return False  # simulation comes to an end
+        # else:
+        #     return True  # simulation continues running
 
         # is_population_alive = all(person.is_alive for person in self.population)
         #
@@ -189,11 +212,8 @@ class Simulation(object):
                     while interaction < 100:
                         randomPerson = random.choice(self.population)
                         if randomPerson.is_alive and randomPerson._id != person._id:
-                            simulation.interaction(person, random_person)
+                            self.interaction(person, randomPerson)
                             interaction += 1
-
-
-
 
     def interaction(self, person, random_person):
         # TODO: Finish this method! This method should be called any time two living
@@ -207,6 +227,7 @@ class Simulation(object):
             random_number = random.uniform(0, 1)
             if random_number < self.basic_repro_num:
                 self.newly_infected.append(random_person._id)
+                self.current_infected += 1
 
         # The possible cases you'll need to cover are listed below:
             # random_person is vaccinated:
@@ -237,16 +258,18 @@ class Simulation(object):
         self.newly_infected = []
 
 if __name__ == "__main__":
-    params = sys.argv[1:]
-    pop_size = int(params[0])
-    vacc_percentage = float(params[1])
-    virus_name = str(params[2])
-    mortality_rate = float(params[3])
-    basic_repro_num = float(params[4])
-    if len(params) == 6:
-        initial_infected = int(params[5])
-    else:
-        initial_infected = 1
-    simulation = Simulation(pop_size, vacc_percentage, virus_name, mortality_rate,
-                            basic_repro_num, initial_infected)
-    simulation.run()
+    # params = sys.argv[1:]
+    # pop_size = int(params[0])
+    # vacc_percentage = float(params[1])
+    # virus_name = str(params[2])
+    # mortality_rate = float(params[3])
+    # basic_repro_num = float(params[4])
+    # if len(params) == 6:
+    #     initial_infected = int(params[5])
+    # else:
+    #     initial_infected = 1
+    # simulation = Simulation(pop_size, vacc_percentage, virus_name, mortality_rate,
+    #                         basic_repro_num, initial_infected)
+    # simulation.run()
+    sim = Simulation(1000, 0.5, 'ryan', 0.5, 0.5)
+    sim.run()
