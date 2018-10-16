@@ -1,4 +1,5 @@
 [
   "herd_test.py::test_simulation",
-  "herd_test.py::test_person_creation"
+  "herd_test.py::test_person_creation",
+  "herd_test.py::test_person_infected_survival"
 ]

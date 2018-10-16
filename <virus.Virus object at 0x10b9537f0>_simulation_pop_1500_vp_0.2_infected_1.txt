@@ -1,0 +1,799 @@
+Population Size: 1500 	 Vaccination Percentage: 0.2 	 Virus Name: <virus.Virus object at 0x10b9537f0> 	 Mortality Rate: 0.75 	 Basic Reproduction Number: 0.25
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 108----
+Person #0 could not infect Person #108
+Person #108 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 396----
+Person #0 could not infect Person #396
+Person #396 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 602----
+Person #0 has infected Person #602
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 92----
+Person #0 could not infect Person #92
+Person #92 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 140----
+Person #0 could not infect Person #140
+Person #140 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1124----
+Person #0 could not infect Person #1124
+Person #1124 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 601----
+Person #0 could not infect Person #601
+Person #601 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 35----
+Person #0 could not infect Person #35
+Person #35 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1118----
+Person #0 has infected Person #1118
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 770----
+Person #0 could not infect Person #770
+Person #770 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1162----
+Person #0 has infected Person #1162
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 729----
+Person #0 could not infect Person #729
+Person #729 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 757----
+Person #0 has infected Person #757
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1104----
+Person #0 has infected Person #1104
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 307----
+Person #0 has infected Person #307
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1152----
+Person #0 could not infect Person #1152
+Person #1152 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1154----
+Person #0 could not infect Person #1154
+Person #1154 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 83----
+Person #0 could not infect Person #83
+Person #83 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 468----
+Person #0 could not infect Person #468
+Person #468 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1293----
+Person #0 could not infect Person #1293
+Person #1293 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1205----
+Person #0 could not infect Person #1205
+Person #1205 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1429----
+Person #0 could not infect Person #1429
+Person #1429 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 300----
+Person #0 could not infect Person #300
+Person #300 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 714----
+Person #0 could not infect Person #714
+Person #714 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1234----
+Person #0 has infected Person #1234
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 188----
+Person #0 could not infect Person #188
+Person #188 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 340----
+Person #0 could not infect Person #340
+Person #340 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 682----
+Person #0 could not infect Person #682
+Person #682 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1043----
+Person #0 could not infect Person #1043
+Person #1043 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 56----
+Person #0 could not infect Person #56
+Person #56 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1320----
+Person #0 could not infect Person #1320
+Person #1320 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 462----
+Person #0 has infected Person #462
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1436----
+Person #0 could not infect Person #1436
+Person #1436 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 281----
+Person #0 could not infect Person #281
+Person #281 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1426----
+Person #0 could not infect Person #1426
+Person #1426 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1182----
+Person #0 could not infect Person #1182
+Person #1182 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1246----
+Person #0 could not infect Person #1246
+Person #1246 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 292----
+Person #0 has infected Person #292
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 794----
+Person #0 has infected Person #794
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 389----
+Person #0 could not infect Person #389
+Person #389 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1210----
+Person #0 has infected Person #1210
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 916----
+Person #0 could not infect Person #916
+Person #916 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 15----
+Person #0 has infected Person #15
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 822----
+Person #0 has infected Person #822
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 6----
+Person #0 has infected Person #6
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 464----
+Person #0 has infected Person #464
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 778----
+Person #0 has infected Person #778
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 96----
+Person #0 could not infect Person #96
+Person #96 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 961----
+Person #0 could not infect Person #961
+Person #961 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 851----
+Person #0 has infected Person #851
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1167----
+Person #0 could not infect Person #1167
+Person #1167 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1038----
+Person #0 has infected Person #1038
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 781----
+Person #0 has infected Person #781
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 412----
+Person #0 could not infect Person #412
+Person #412 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 171----
+Person #0 could not infect Person #171
+Person #171 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1340----
+Person #0 could not infect Person #1340
+Person #1340 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 712----
+Person #0 could not infect Person #712
+Person #712 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 94----
+Person #0 has infected Person #94
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1418----
+Person #0 could not infect Person #1418
+Person #1418 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 823----
+Person #0 could not infect Person #823
+Person #823 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 405----
+Person #0 could not infect Person #405
+Person #405 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1081----
+Person #0 has infected Person #1081
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1244----
+Person #0 has infected Person #1244
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 889----
+Person #0 could not infect Person #889
+Person #889 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 582----
+Person #0 could not infect Person #582
+Person #582 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 779----
+Person #0 could not infect Person #779
+Person #779 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1032----
+Person #0 could not infect Person #1032
+Person #1032 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1041----
+Person #0 could not infect Person #1041
+Person #1041 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1030----
+Person #0 could not infect Person #1030
+Person #1030 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 802----
+Person #0 could not infect Person #802
+Person #802 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 370----
+Person #0 has infected Person #370
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 809----
+Person #0 could not infect Person #809
+Person #809 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1362----
+Person #0 could not infect Person #1362
+Person #1362 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 789----
+Person #0 could not infect Person #789
+Person #789 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1225----
+Person #0 could not infect Person #1225
+Person #1225 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 288----
+Person #0 has infected Person #288
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 469----
+Person #0 could not infect Person #469
+Person #469 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 509----
+Person #0 could not infect Person #509
+Person #509 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1373----
+Person #0 could not infect Person #1373
+Person #1373 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1179----
+Person #0 could not infect Person #1179
+Person #1179 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 453----
+Person #0 has infected Person #453
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 914----
+Person #0 could not infect Person #914
+Person #914 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 175----
+Person #0 could not infect Person #175
+Person #175 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 373----
+Person #0 could not infect Person #373
+Person #373 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1419----
+Person #0 could not infect Person #1419
+Person #1419 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 495----
+Person #0 could not infect Person #495
+Person #495 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1006----
+Person #0 could not infect Person #1006
+Person #1006 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1254----
+Person #0 could not infect Person #1254
+Person #1254 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 225----
+Person #0 could not infect Person #225
+Person #225 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1160----
+Person #0 has infected Person #1160
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 609----
+Person #0 could not infect Person #609
+Person #609 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1051----
+Person #0 could not infect Person #1051
+Person #1051 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 141----
+Person #0 could not infect Person #141
+Person #141 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1303----
+Person #0 has infected Person #1303
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 830----
+Person #0 could not infect Person #830
+Person #830 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1406----
+Person #0 could not infect Person #1406
+Person #1406 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 138----
+Person #0 has infected Person #138
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 1374----
+Person #0 could not infect Person #1374
+Person #1374 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 193----
+Person #0 could not infect Person #193
+Person #193 is vaccinated
+**********************************************************
+
+
+Begin Infecting the Population! 
+
+----Infected Person - ID# 0 | Healthy Person - ID# 573----
+Person #0 could not infect Person #573
+Person #573 is vaccinated
+**********************************************************
+
+
+29 people have been infected. 
+Initial Time Step Begins!
+Time Step #1 has just ended..
+Time Step Results: 
+All of the infected have died
+Person #0 - Health: DEAD
+Person #6 - Health: DEAD
+Person #94 - Health: DEAD
+Person #288 - Health: DEAD
+Person #292 - Health: DEAD
+Person #370 - Health: DEAD
+Person #453 - Health: DEAD
+Person #462 - Health: DEAD
+Person #602 - Health: DEAD
+Person #778 - Health: DEAD
+Person #781 - Health: DEAD
+Person #822 - Health: DEAD
+Person #851 - Health: DEAD
+Person #1081 - Health: DEAD
+Person #1104 - Health: DEAD
+Person #1118 - Health: DEAD
+Person #1160 - Health: DEAD
+Person #1162 - Health: DEAD
+Person #1210 - Health: DEAD
+Person #1234 - Health: DEAD
+Person #1303 - Health: DEAD

@@ -19,3 +19,5 @@ class Person(object):
         else:
             self.is_alive = False
             return False
+
+    

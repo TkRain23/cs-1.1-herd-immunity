@@ -5,6 +5,9 @@ from person import Person
 from logger import Logger
 
 class Simulation(object):
+    """
+    runs the herd immunity simulation program
+    """
     def __init__(self, population_size, vacc_percentage, virus_name,
                  mortality_rate, basic_repro_num, initial_infected=1):
         self.population_size = population_size
@@ -26,6 +29,9 @@ class Simulation(object):
         self.population = self._create_population(initial_infected)
 
     def _create_population(self, initial_infected):
+        """
+        creates the population that will be used for the simulation
+        """
         population = []
         infected_count = 0
         while len(population) != self.population_size:
@@ -47,6 +53,9 @@ class Simulation(object):
         return population
 
     def _simulation_should_continue(self):
+        """
+        determines if the simulation should continue or not
+        """
         self.logger.log_file.write('Time Step Results: \n')
         for person in self.population:
             if person.is_alive and person.infected != None:
@@ -81,6 +90,9 @@ class Simulation(object):
         print('{0} turns completed. Siumulation terminated.'.format(time_step_counter))
 
     def time_step(self):
+        """
+        computing time step aspect of the simulation
+        """
         people_interacted = []
 
         for person in self.population:
@@ -106,6 +118,9 @@ class Simulation(object):
         self._infect_newly_infected()
 
     def interaction(self, person, random_person):
+        """
+        covers all possible outcomes of people interaction
+        """
         assert person.is_alive == True
         assert random_person.is_alive == True
         person_infected = False
@@ -121,6 +136,9 @@ class Simulation(object):
         self.logger.log_interaction(person, random_person, person_infected, random_person.is_vaccinated, check_sick)
 
     def _infect_newly_infected(self):
+        """
+        infects people
+        """
         self.current_infected += len(self.newly_infected)
         self.logger.log_file.write('{} people have been infected. \n'.format(self.current_infected))
         for person in self.population:
@@ -129,6 +147,9 @@ class Simulation(object):
         self.newly_infected.clear()
 
     def _is_everyone_infected():
+        """
+        check if everyone is infected
+        """
         for person in self.population():
             if person.infected != None:
                 return False

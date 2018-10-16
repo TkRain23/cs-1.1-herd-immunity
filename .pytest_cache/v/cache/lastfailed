@@ -1,1 +1,8 @@
-{}
+{
+  "herd_test.py::test_continue_sim": true,
+  "herd_test.py::test_create_sim": true,
+  "herd_test.py::test_non_infected_survival": true,
+  "herd_test.py::test_person_infected_survisval": true,
+  "herd_test.py::test_person_not_infected_survival": true,
+  "herd_test.py::test_time_step": true
+}
