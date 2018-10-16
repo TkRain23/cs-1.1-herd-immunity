@@ -44,7 +44,7 @@ def stop_when_all_dead():
 
 def stop_when_all_infected():
 	ebola = Virus("Ebola", .5, 0.2)
-	sim = Simulation(1500, 0.20, ebola, 0.75, 0.25)
+	sim = Simulation(1700, 0.20, ebola, 0.75, 0.25)
 	for person in sim.population:
 		person.infected = None
 	assert sim._simulation_should_continue() is False

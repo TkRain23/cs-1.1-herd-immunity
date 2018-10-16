@@ -16,6 +16,7 @@ class Simulation(object):
         self.current_infected = initial_infected
         self.total_dead = 0
         self.next_person_id = 0
+        self.time_step_counter = 0
         self.vacc_percentage = vacc_percentage
         self.virus_name = virus_name
         self.mortality_rate = mortality_rate
@@ -48,8 +49,8 @@ class Simulation(object):
                     unvaccinated_person = Person(self.next_person_id, False)
                     population.append(unvaccinated_person)
             self.next_person_id += 1
-        print('Population Has Been Created')
-        print(len(population))
+        # print('Population Has Been Created')
+        # print(len(population))
         return population
 
     def _simulation_should_continue(self):
@@ -58,18 +59,17 @@ class Simulation(object):
         """
         self.logger.log_file.write('Time Step Results: \n')
         for person in self.population:
-            if person.is_alive and person.infected != None:
+            if person.is_alive and person.infected is not None:
                 did_person_survive = person.did_survive_infection()
                 if not did_person_survive:
-                    self.total_dead +=1
-        for person in self.population:
-            if person.is_alive and person.infected != None:
-                return True
+                    self.total_dead += 1
+
         self.logger.log_file.write('All of the infected have died\n')
+        
         for person in self.population:
-            if person.infected != None:
+            if person.infected is not None:
                 self.logger.log_infection_survival(person, True)
-        return False
+            return False
         if self.current_infected == self.population_size:
             return False
         if self.total_dead == self.current_infected:
@@ -77,17 +77,19 @@ class Simulation(object):
         for person in self.population:
             if person.is_alive:
                 return True
-        return False
+        for person in self.population:
+            if person.is_alive and person.infected is not None:
+                return True
 
     def run(self):
-        time_step_counter = 0
+        # time_step_counter = 0
         should_continue = True
         while should_continue:
             self.time_step()
-            time_step_counter += 1
-            self.logger.log_time_step(time_step_counter)
+            # time_step_counter += 1
+            self.logger.log_time_step(self.time_step_counter)
             should_continue = self._simulation_should_continue()
-        print('{0} turns completed. Siumulation terminated.'.format(time_step_counter))
+        print('The simulation has ended after {0} turns.'.format(self.time_step_counter))
 
     def time_step(self):
         """
@@ -116,6 +118,7 @@ class Simulation(object):
                             self.interaction(person, random_person)
                             people_interacted.append(random_person._id)
         self._infect_newly_infected()
+        self.time_step_counter += 1
 
     def interaction(self, person, random_person):
         """
@@ -157,5 +160,8 @@ class Simulation(object):
 
 if __name__ == "__main__":
     if debug:
-        sim = Simulation(1500, 0.20, "woohoo", 0.75, 0.25)
+        """
+        size, vacc_percentage, virus_name, mortality_rate, basic_repro_num
+        """
+        sim = Simulation(1700, 0.25, "woohoo", 0.75, 0.25)
         sim.run()
