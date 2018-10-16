@@ -65,7 +65,7 @@ class Simulation(object):
                     self.total_dead += 1
 
         self.logger.log_file.write('All of the infected have died\n')
-        
+
         for person in self.population:
             if person.infected is not None:
                 self.logger.log_infection_survival(person, True)
@@ -98,13 +98,13 @@ class Simulation(object):
         people_interacted = []
 
         for person in self.population:
-            if person.is_alive and person.infected != None:
+            if person.is_alive and person.infected is not None:
                 random_person_index = 0
                 number_of_interactions = 0
                 limit_of_interactions = 0
                 interaction_loop = True
 
-                if self.population_size - self.current_infected  < 100:
+                if self.population_size - self.current_infected < 100:
                     interaction_limit = self.population_size - self.current_infected - self.total_dead
                 else:
                     interaction_limit = 100
@@ -159,9 +159,8 @@ class Simulation(object):
         return True
 
 if __name__ == "__main__":
-    if debug:
-        """
-        size, vacc_percentage, virus_name, mortality_rate, basic_repro_num
-        """
-        sim = Simulation(1700, 0.25, "woohoo", 0.75, 0.25)
-        sim.run()
+    """
+    size, vacc_percentage, virus_name, mortality_rate, basic_repro_num
+    """
+    sim = Simulation(1700, 0.25, "woohoo", 0.75, 0.25)
+    sim.run()
